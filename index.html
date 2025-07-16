@@ -1,61 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Basic HTML5 setup -->
+    <!-- Generating a basic HTML5 setup -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Website</title> <!-- UPDATE: Change this to your actual name -->
+    <title> Zev van Zanten </title>
     <style>
-        /* CSS Reset - Remove default browser styling */
-        /* CSS Reset - Remove default browser styling */
+        /* CSS Reset - Removing default browser styling to add some customization of my own */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Main body styling */
+        /* Adding some main body styling */
         body {
-            font-family: 'Georgia', serif; /* Professional serif font */
+            font-family: 'Georgia', serif; /* Implementing a serif font */
             line-height: 1.6;
             color: #333;
-            background-color: #fafafa; /* Light gray background */
+            background-color: #fafafa; /* Adding a light gray background */
         }
 
-        /* Container for all content - centers everything */
+        /* Container for all content - Centering everything */
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
         }
 
-        /* Navigation bar styling */
+        /* Doing some navigation bar styling */
         nav {
             background-color: #fff;
             padding: 1rem 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
-            position: sticky; /* Stays at top when scrolling */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adding a little shadow */
+            position: sticky; /* Making sure bar at top when scrolling */
             top: 0;
-            z-index: 100; /* Ensures nav stays above other content */
+            z-index: 100; /* Ensuring nav stays above other content */
         }
 
-        /* Navigation menu layout */
+        /* Generating navigation menu layout */
         nav ul {
             list-style: none;
             display: flex;
             justify-content: center;
-            flex-wrap: wrap; /* Wraps on smaller screens */
+            flex-wrap: wrap; /* Making sure site wraps on smaller screens */
             gap: 2rem;
         }
 
-        /* Navigation link styling */
+        /* Doing some navigatioin link styling */
         nav a {
             text-decoration: none;
             color: #333;
             font-weight: 500;
             padding: 0.5rem 1rem;
             border-radius: 4px;
-            transition: background-color 0.3s; /* Smooth hover effect */
+            transition: background-color 0.3s; /* Adding a smooth hover effect */
         }
 
         /* Navigation link hover and active states */
@@ -63,18 +62,18 @@
             background-color: #f0f0f0;
         }
 
-        /* Main content sections - hidden by default */
+        /* Main content sections - hiding it by by default */
         .section {
             display: none;
             padding: 2rem 0;
         }
 
-        /* Active section is visible */
+        /* Makign sure active section is visible */
         .section.active {
             display: block;
         }
 
-        /* Main heading (your name) */
+        /* Main heading (for my name) */
         h1 {
             color: #2c3e50;
             margin-bottom: 1rem;
@@ -82,23 +81,23 @@
             text-align: center;
         }
 
-        /* Section headings */
+        /* Adding section headings */
         h2 {
             color: #34495e;
             margin-bottom: 1.5rem;
             font-size: 2rem;
-            border-bottom: 2px solid #ecf0f1; /* Underline effect */
+            border-bottom: 2px solid #ecf0f1; /* Using an underlining effect */
             padding-bottom: 0.5rem;
         }
 
-        /* Sub-section headings */
+        /* Adding Sub-section headings */
         h3 {
             color: #2c3e50;
             margin-bottom: 1rem;
             font-size: 1.3rem;
         }
 
-        /* Bio section styling */
+        /* Adding Bio section styling */
         .bio {
             text-align: center;
             font-size: 1.1rem;
@@ -106,7 +105,7 @@
             color: #555;
         }
 
-        /* Interest tags container */
+        /* Adding Interest tags container */
         .interests {
             display: flex;
             justify-content: center;
@@ -115,7 +114,7 @@
             margin-top: 1rem;
         }
 
-        /* Individual interest tag styling */
+        /* Adding individual interest tag styling */
         .interest-tag {
             background-color: #3498db; /* Blue background */
             color: white;
@@ -124,12 +123,12 @@
             font-size: 0.9rem;
         }
 
-        /* Experience section container */
+        /* Adding an Experience section container */
         .experience-section {
             margin-bottom: 2rem;
         }
 
-        /* Individual experience item styling */
+        /* Doing some Individual experience item styling */
         .experience-item {
             background-color: #fff;
             padding: 1.5rem;
@@ -138,28 +137,28 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
         }
 
-        /* Experience item headings */
+        /* Adding Experience item headings */
         .experience-item h4 {
             color: #2c3e50;
             margin-bottom: 0.5rem;
             font-size: 1.1rem;
         }
 
-        /* Job role/title styling */
+        /* Doing some job role/title styling */
         .experience-item .role {
             color: #7f8c8d;
             font-style: italic;
             margin-bottom: 0.5rem;
         }
 
-        /* Date range styling */
+        /* Some date range styling */
         .experience-item .date {
             color: #95a5a6;
             font-size: 0.9rem;
             margin-bottom: 0.5rem;
         }
 
-        /* Skills grid layout */
+        /* A nice little skills grid layout */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
@@ -167,7 +166,7 @@
             margin-top: 1rem;
         }
 
-        /* Individual skill category styling */
+        /* Adding some individual skill category styling */
         .skill-category {
             background-color: #fff;
             padding: 1.5rem;
@@ -175,32 +174,32 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
-        /* Skill category headings */
+        /* Doing some skill category headings */
         .skill-category h4 {
             color: #2c3e50;
             margin-bottom: 1rem;
             font-size: 1.2rem;
         }
 
-        /* Skill list styling */
+        /* Doing some skill list styling */
         .skill-list {
             list-style: none;
         }
 
-        /* Individual skill items */
+        /* Makign some individual skill items */
         .skill-list li {
             padding: 0.3rem 0;
             color: #555;
         }
 
-        /* Custom bullet points for skills */
+        /* Creating custom bullet points for my skills */
         .skill-list li:before {
             content: "▸ ";
             color: #3498db;
             font-weight: bold;
         }
 
-        /* Writing and project item styling */
+        /* Adding writing and project item styling */
         .writing-item, .project-item {
             background-color: #fff;
             padding: 1.5rem;
@@ -209,31 +208,31 @@
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
-        /* Writing and project headings */
+        /* Adding writing and project headings */
         .writing-item h4, .project-item h4 {
             color: #2c3e50;
             margin-bottom: 0.5rem;
         }
 
-        /* Link styling in writing and projects */
+        /* Adding link styling in writing and projects */
         .writing-item a, .project-item a {
             color: #3498db;
             text-decoration: none;
         }
 
-        /* Link hover effects */
+        /* Adding link hover effects */
         .writing-item a:hover, .project-item a:hover {
             text-decoration: underline;
         }
 
-        /* Favorites section highlighting */
+        /* Adding some Favorites section highlighting */
         .favorites {
             border-left: 4px solid #f39c12; /* Orange left border */
             padding-left: 1rem;
             margin-bottom: 2rem;
         }
 
-        /* Contact information container */
+        /* Adding Contact information container */
         .contact-info {
             background-color: #fff;
             padding: 2rem;
@@ -242,48 +241,48 @@
             text-align: center;
         }
 
-        /* Contact section heading */
+        /* Adding Contact section heading */
         .contact-info h3 {
             margin-bottom: 1rem;
             color: #2c3e50;
         }
 
-        /* Contact info paragraphs */
+        /* Adding Contact info paragraphs */
         .contact-info p {
             margin-bottom: 0.5rem;
             color: #555;
         }
 
-        /* Contact links */
+        /* Adding Contact links styling */
         .contact-info a {
             color: #3498db;
             text-decoration: none;
         }
 
-        /* Contact link hover effects */
+        /* Adding Contact link hover effects */
         .contact-info a:hover {
             text-decoration: underline;
         }
 
-        /* Mobile responsive design */
+        /* Setting up mobile responsive design */
         @media (max-width: 600px) {
-            /* Stack navigation vertically on mobile */
+            /* Ensuring it stack snavigation vertically on mobile */
             nav ul {
                 flex-direction: column;
                 gap: 0.5rem;
             }
             
-            /* Smaller main heading on mobile */
+            /* Adding smaller main heading on mobile */
             h1 {
                 font-size: 2rem;
             }
             
-            /* Center interests on mobile */
+            /* Centering interests on mobile */
             .interests {
                 justify-content: center;
             }
             
-            /* Single column skills grid on mobile */
+            /* Using single column skills grid on mobile */
             .skills-grid {
                 grid-template-columns: 1fr;
             }
@@ -310,20 +309,19 @@
     <div class="container">
         <!-- HOME SECTION - Active by default -->
         <section id="home" class="section active">
-            <h1>Your Name</h1> <!-- UPDATE: Replace with your actual name -->
+            <h1>Zev van Zanten</h1>
             <div class="bio">
                 <!-- UPDATE: Replace with your personal bio -->
-                <p>Brief bio goes here. Write a few sentences about who you are, what you do, and what drives you. Keep it engaging and personal while maintaining a professional tone.</p>
+                <p> Senior at Duke University interested in data science, applied statistics, public policy and public interest technology. Currently sharpening my data science skills and building talent pipelines at Pathways to Policy and the Paragon Policy Fellowship. </p>
             </div>
             <h3>Interests</h3>
             <div class="interests">
                 <!-- UPDATE: Customize these interest tags with your own interests -->
-                <span class="interest-tag">Public Policy</span>
                 <span class="interest-tag">Data Science</span>
+                <span class="interest-tag">Public Policy</span>
                 <span class="interest-tag">Writing</span>
-                <span class="interest-tag">Technology</span>
+                <span class="interest-tag">Statistics</span>
                 <span class="interest-tag">Research</span>
-                <span class="interest-tag">Community Service</span>
             </div>
         </section>
 
@@ -334,19 +332,60 @@
             <!-- Professional Work Experience -->
             <div class="experience-section">
                 <h3>Professional Experience</h3>
-                <!-- UPDATE: Replace with your actual work experience -->
+                
                 <div class="experience-item">
-                    <h4>Organization Name</h4> <!-- Company/Organization -->
-                    <div class="role">Job Title</div> <!-- Your position -->
-                    <div class="date">Month Year - Month Year</div> <!-- Employment period -->
-                    <p>Brief description of your role and key accomplishments. Focus on impact and relevant skills developed.</p>
+                    <h4>Bates White Economic Consulting</h4> <!-- Company/Organization -->
+                    <div class="role">Summer Consultant Intern</div> <!-- My position -->
+                    <div class="date">June 2025 - Present</div> <!-- Employment period -->
+                    <p>Providing advisory services to companies engaged in mergers and acquisitions.</p>
                 </div>
-                <!-- Add more experience items as needed -->
+                
                 <div class="experience-item">
-                    <h4>Organization Name</h4>
-                    <div class="role">Job Title</div>
-                    <div class="date">Month Year - Month Year</div>
-                    <p>Brief description of your role and key accomplishments. Focus on impact and relevant skills developed.</p>
+                    <h4>Duke University</h4> <!-- Company/Organization -->
+                    <div class="role">Woodman Scholar</div> <!-- My position -->
+                    <div class="date">October 2024 - Present</div> <!-- Employment period -->
+                    <p>Researching geographic regression discontinuity.</p>
+                </div>
+                
+                <div class="experience-item">
+                    <h4>Duke University</h4> <!-- Company/Organization -->
+                    <div class="role">Woodman Scholar</div> <!-- Your position -->
+                    <div class="date">October 2024 - Present</div> <!-- Employment period -->
+                    <p>Researching geographic regression discontinuity.</p>
+                </div>
+                <div class="experience-item">
+                    <h4>Duke University, Fuqua School of Business</h4>
+                    <div class="role">Research Assistant</div>
+                    <div class="date">February 2024 - Present</div>
+                    <p>Study various topics at the intersection of policy, economics, and innovation.</p>
+                </div>
+                
+                <div class="experience-item">
+                    <h4>Competitive Enterprise Institute</h4>
+                    <div class="role">Policy and Research Intern</div>
+                    <div class="date">May 2024 - August 2024</div>
+                    <p>Researched antitrust and technology policy, wrote policy commentary, and helped advocate for policy change.</p>
+                </div>
+
+                <div class="experience-item">
+                    <h4>Bluestone Institute</h4>
+                    <div class="role">Research Intern</div>
+                    <div class="date">June 2024 - August 2024</div>
+                    <p>Helped a new think tank implement generative AI into the academic and policy research process.</p>
+                </div>
+                
+                <div class="experience-item">
+                    <h4>Marginal revolution University</h4>
+                    <div class="role">Marketing Intern</div>
+                    <div class="date">September 2023 - May 2024</div>
+                    <p>Planned and implemented new marketing strategies for an online education non-profit, helping connect teachers nationwide to free resources. </p>
+                </div>
+                
+                <div class="experience-item">
+                    <h4>Diaper Bank of North Carolina</h4>
+                    <div class="role">Data Science Intern</div>
+                    <div class="date">May 2023 - August 2023</div>
+                    <p>Used Python to clean and analyze ~2.1 million datapoints before building 40+ visualizations and constructing an interactive dashboard with HTML and CSS </p>
                 </div>
             </div>
 
