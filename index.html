@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Zev van Zanten </title>
-    <style>
+<style>
         /* CSS Reset - Removing default browser styling to add some customization of my own */
         * {
             margin: 0;
@@ -13,12 +13,12 @@
             box-sizing: border-box;
         }
 
-        /* Adding some main body styling */
+        /* Adding some main body styling - Dark theme */
         body {
             font-family: 'Georgia', serif; /* Implementing a serif font */
             line-height: 1.6;
-            color: #333;
-            background-color: #fafafa; /* Adding a light gray background */
+            color: #e2e8f0; /* Light gray text for dark backgrounds */
+            background-color: #0f172a; /* Dark navy/slate background */
         }
 
         /* Container for all content - Centering everything */
@@ -28,11 +28,11 @@
             padding: 20px;
         }
 
-        /* Doing some navigation bar styling */
+        /* Doing some navigation bar styling - Dark theme */
         nav {
-            background-color: #fff;
+            background-color: #1e293b; /* Darker slate for nav */
             padding: 1rem 0;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adding a little shadow */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Darker shadow */
             position: sticky; /* Making sure bar at top when scrolling */
             top: 0;
             z-index: 100; /* Ensuring nav stays above other content */
@@ -47,19 +47,20 @@
             gap: 2rem;
         }
 
-        /* Doing some navigatioin link styling */
+        /* Doing some navigation link styling - Dark theme */
         nav a {
             text-decoration: none;
-            color: #333;
+            color: #cbd5e1; /* Light slate text */
             font-weight: 500;
             padding: 0.5rem 1rem;
             border-radius: 4px;
-            transition: background-color 0.3s; /* Adding a smooth hover effect */
+            transition: all 0.3s; /* Adding a smooth hover effect */
         }
 
-        /* Navigation link hover and active states */
+        /* Navigation link hover and active states - Dark theme */
         nav a:hover, nav a.active {
-            background-color: #f0f0f0;
+            background-color: #334155; /* Lighter slate for hover */
+            color: #f1f5f9; /* Even lighter text on hover */
         }
 
         /* Main content sections - hiding it by by default */
@@ -68,41 +69,41 @@
             padding: 2rem 0;
         }
 
-        /* Makign sure active section is visible */
+        /* Making sure active section is visible */
         .section.active {
             display: block;
         }
 
-        /* Main heading (for my name) */
+        /* Main heading (for my name) - Dark theme */
         h1 {
-            color: #2c3e50;
+            color: #f8fafc; /* Almost white for main heading */
             margin-bottom: 1rem;
             font-size: 2.5rem;
             text-align: center;
         }
 
-        /* Adding section headings */
+        /* Adding section headings - Dark theme */
         h2 {
-            color: #34495e;
+            color: #e2e8f0; /* Light gray for section headings */
             margin-bottom: 1.5rem;
             font-size: 2rem;
-            border-bottom: 2px solid #ecf0f1; /* Using an underlining effect */
+            border-bottom: 2px solid #334155; /* Darker border */
             padding-bottom: 0.5rem;
         }
 
-        /* Adding Sub-section headings */
+        /* Adding Sub-section headings - Dark theme */
         h3 {
-            color: #2c3e50;
+            color: #f1f5f9; /* Light text for sub-headings */
             margin-bottom: 1rem;
             font-size: 1.3rem;
         }
 
-        /* Adding Bio section styling */
+        /* Adding Bio section styling - Dark theme */
         .bio {
             text-align: center;
             font-size: 1.1rem;
             margin-bottom: 2rem;
-            color: #555;
+            color: #94a3b8; /* Muted light gray */
         }
 
         /* Adding Interest tags container */
@@ -114,9 +115,9 @@
             margin-top: 1rem;
         }
 
-        /* Adding individual interest tag styling */
+        /* Adding individual interest tag styling - Dark theme */
         .interest-tag {
-            background-color: #3498db; /* Blue background */
+            background-color: #3b82f6; /* Bright blue for contrast */
             color: white;
             padding: 0.5rem 1rem;
             border-radius: 20px; /* Rounded pill shape */
@@ -128,32 +129,33 @@
             margin-bottom: 2rem;
         }
 
-        /* Doing some Individual experience item styling */
+        /* Doing some Individual experience item styling - Dark theme */
         .experience-item {
-            background-color: #fff;
+            background-color: #1e293b; /* Dark slate background */
             padding: 1.5rem;
             margin-bottom: 1rem;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Subtle dark shadow */
+            border: 1px solid #334155; /* Subtle border */
         }
 
-        /* Adding Experience item headings */
+        /* Adding Experience item headings - Dark theme */
         .experience-item h4 {
-            color: #2c3e50;
+            color: #f1f5f9; /* Light text for headings */
             margin-bottom: 0.5rem;
             font-size: 1.1rem;
         }
 
-        /* Doing some job role/title styling */
+        /* Doing some job role/title styling - Dark theme */
         .experience-item .role {
-            color: #7f8c8d;
+            color: #94a3b8; /* Muted gray for roles */
             font-style: italic;
             margin-bottom: 0.5rem;
         }
 
-        /* Some date range styling */
+        /* Some date range styling - Dark theme */
         .experience-item .date {
-            color: #95a5a6;
+            color: #64748b; /* Darker muted gray for dates */
             font-size: 0.9rem;
             margin-bottom: 0.5rem;
         }
@@ -166,17 +168,18 @@
             margin-top: 1rem;
         }
 
-        /* Adding some individual skill category styling */
+        /* Adding some individual skill category styling - Dark theme */
         .skill-category {
-            background-color: #fff;
+            background-color: #1e293b; /* Dark slate background */
             padding: 1.5rem;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            border: 1px solid #334155; /* Subtle border */
         }
 
-        /* Doing some skill category headings */
+        /* Doing some skill category headings - Dark theme */
         .skill-category h4 {
-            color: #2c3e50;
+            color: #f1f5f9; /* Light text for headings */
             margin-bottom: 1rem;
             font-size: 1.2rem;
         }
@@ -186,87 +189,126 @@
             list-style: none;
         }
 
-        /* Makign some individual skill items */
+        /* Making some individual skill items - Dark theme */
         .skill-list li {
             padding: 0.3rem 0;
-            color: #555;
+            color: #cbd5e1; /* Light gray for skill items */
         }
 
-        /* Creating custom bullet points for my skills */
+        /* Creating custom bullet points for my skills - Dark theme */
         .skill-list li:before {
             content: "▸ ";
-            color: #3498db;
+            color: #3b82f6; /* Blue bullet points */
             font-weight: bold;
         }
 
-        /* Adding writing and project item styling */
+        /* Adding writing and project item styling - Dark theme */
         .writing-item, .project-item {
-            background-color: #fff;
+            background-color: #1e293b; /* Dark slate background */
             padding: 1.5rem;
             margin-bottom: 1rem;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            border: 1px solid #334155; /* Subtle border */
         }
 
-        /* Adding writing and project headings */
+        /* Adding writing and project headings - Dark theme */
         .writing-item h4, .project-item h4 {
-            color: #2c3e50;
+            color: #f1f5f9; /* Light text for headings */
             margin-bottom: 0.5rem;
         }
 
-        /* Adding link styling in writing and projects */
+        /* Adding writing and project text - Dark theme */
+        .writing-item p, .project-item p {
+            color: #cbd5e1; /* Light gray for body text */
+        }
+
+        /* Adding link styling in writing and projects - Dark theme */
         .writing-item a, .project-item a {
-            color: #3498db;
+            color: #60a5fa; /* Lighter blue for links */
             text-decoration: none;
         }
 
-        /* Adding link hover effects */
+        /* Adding link hover effects - Dark theme */
         .writing-item a:hover, .project-item a:hover {
+            color: #93c5fd; /* Even lighter blue on hover */
             text-decoration: underline;
         }
 
-        /* Adding some Favorites section highlighting */
+        /* Adding some Favorites section highlighting - Dark theme */
         .favorites {
-            border-left: 4px solid #f39c12; /* Orange left border */
+            border-left: 4px solid #f59e0b; /* Amber left border */
             padding-left: 1rem;
             margin-bottom: 2rem;
         }
 
-        /* Adding Contact information container */
+        /* Adding Contact information container - Dark theme */
         .contact-info {
-            background-color: #fff;
+            background-color: #1e293b; /* Dark slate background */
             padding: 2rem;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            border: 1px solid #334155; /* Subtle border */
             text-align: center;
         }
 
-        /* Adding Contact section heading */
+        /* Adding Contact section heading - Dark theme */
         .contact-info h3 {
             margin-bottom: 1rem;
-            color: #2c3e50;
+            color: #f1f5f9; /* Light text */
         }
 
-        /* Adding Contact info paragraphs */
+        /* Adding Contact info paragraphs - Dark theme */
         .contact-info p {
             margin-bottom: 0.5rem;
-            color: #555;
+            color: #cbd5e1; /* Light gray text */
         }
 
-        /* Adding Contact links styling */
+        /* Adding Contact links styling - Dark theme */
         .contact-info a {
-            color: #3498db;
+            color: #60a5fa; /* Light blue for links */
             text-decoration: none;
         }
 
-        /* Adding Contact link hover effects */
+        /* Adding Contact link hover effects - Dark theme */
         .contact-info a:hover {
+            color: #93c5fd; /* Lighter blue on hover */
             text-decoration: underline;
+        }
+
+        /* Details/Summary styling for collapsible sections - Dark theme */
+        details {
+            margin-bottom: 1rem;
+        }
+
+        details summary {
+            cursor: pointer;
+            padding: 1rem;
+            background-color: #1e293b;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            margin-bottom: 0.5rem;
+            transition: background-color 0.3s;
+        }
+
+        details summary:hover {
+            background-color: #334155;
+        }
+
+        details[open] summary {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            margin-bottom: 0;
+        }
+
+        details summary h3, details summary h4 {
+            margin: 0;
+            color: #f1f5f9;
         }
 
         /* Setting up mobile responsive design */
         @media (max-width: 600px) {
-            /* Ensuring it stack snavigation vertically on mobile */
+            /* Ensuring it stack navigation vertically on mobile */
             nav ul {
                 flex-direction: column;
                 gap: 0.5rem;
