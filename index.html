@@ -339,8 +339,6 @@
                 <!-- Navigation links - each calls showSection() to switch content -->
                 <li><a href="#" onclick="showSection('home')" class="nav-link active">Home</a></li>
                 <li><a href="#" onclick="showSection('experience')" class="nav-link">Experience</a></li>
-                <li><a href="#" onclick="showSection('education')" class="nav-link">Education</a></li>
-                <li><a href="#" onclick="showSection('skills')" class="nav-link">Skills</a></li>
                 <li><a href="#" onclick="showSection('writing')" class="nav-link">Writing</a></li>
                 <li><a href="#" onclick="showSection('projects')" class="nav-link">Projects</a></li>
                 <li><a href="#" onclick="showSection('contact')" class="nav-link">Contact</a></li>
@@ -354,7 +352,7 @@
         <section id="home" class="section active">
             <h1>Zev van Zanten</h1>
             <div class="bio">
-                <p> Senior at Duke University interested in data science, applied statistics, public policy and public interest technology. Currently sharpening my data science skills at Bates White and building talent pipelines at Pathways to Policy and the Paragon Policy Fellowship. </p>
+                <p> Senior at Duke University interested in real estate, data science, and public interest technology. Currently looking for full-time roles that would let me use one or more of those skills. </p>
             </div>
             <h3>Interests</h3>
             <div class="interests">
@@ -373,23 +371,23 @@
             <!-- Professional Work Experience -->
             <details class="experience-section" open>
                 <summary><h3>Professional Experience</h3></summary>
-                
+
                 <div class="experience-item">
-                    <h4>Bates White Economic Consulting</h4> <!-- Company/Organization -->
-                    <div class="role">Summer Consultant Intern</div> <!-- My position -->
-                    <div class="date">June 2025 - Present</div> <!-- Employment period -->
-                    <p>Providing advisory services to companies engaged in mergers and acquisitions.</p>
-                </div>
-                
-                <div class="experience-item">
-                    <h4>Duke University</h4> <!-- Company/Organization -->
-                    <div class="role">Woodman Scholar</div> <!-- My position -->
-                    <div class="date">October 2024 - Present</div> <!-- Employment period -->
+                    <h4>Duke University</h4>
+                    <div class="role">Woodman Scholar</div>
+                    <div class="date">October 2024 - Present</div>
                     <p>Researching geographic regression discontinuity.</p>
                     
                     <div class="role">Research Assistant, Fuqua School of Business</div>
                     <div class="date">February 2024 - Present</div>
                     <p>Study various topics at the intersection of policy, economics, and innovation.</p>
+                </div>
+                
+                <div class="experience-item">
+                    <h4>Bates White Economic Consulting</h4>
+                    <div class="role">Summer Consultant Intern</div>
+                    <div class="date">June 2025 - August 2025</div> 
+                    <p>Provided advisory services to companies navigating federal antitrust policy.</p>
                 </div>
                 
                 <div class="experience-item">
@@ -424,6 +422,13 @@
             <!-- Fellowship Experience -->
             <details class="experience-section">
                 <summary><h3>Fellowships</h3></summary>
+
+               <div class="experience-item">
+                    <h4>Mercatus Center at George Mason University</h4>
+                    <div class="role">Tullock Fellow</div>
+                    <div class="date">August 2024 - Present</div>
+                    <p>Studying the intersection political economy, governance, and government.</p>
+                </div>
                 
                 <div class="experience-item">
                     <h4>Mercatus Center at George Mason University</h4>
@@ -514,6 +519,20 @@
                 </div>
 
                 <div class="experience-item">
+                    <h4>Duke Investment Club</h4>
+                    <div class="role">General Member</div>
+                    <div class="date">September 2022 - Present</div>
+                    <p>Learn about investing, financial valuation, and other aspects of finance.</p>
+                </div>
+
+                <div class="experience-item">
+                    <h4>Duke Real Estate Club</h4>
+                    <div class="role">General Member</div>
+                    <div class="date">September 2022 - Present</div>
+                    <p>Learn about commerical real estate investing, financial valuation, and other aspects of real etate</p>
+                </div>
+
+                <div class="experience-item">
                     <h4>Root Causes</h4>
                     <div class="role">Wellnest Communications Chair</div>
                     <div class="date">August 2023 - Present</div>
@@ -524,47 +543,6 @@
                     <p>Helped manage in-person distributions and deliveries for a program that fed 300+ families a week.</p>
                 </div>
             </details>
-        </section>
-
-        <section id="education" class="section">
-                <h2>Education</h2>
-                
-                <!-- Duke University -->
-                <div class="experience-item">
-                    <h4>Duke University</h4>
-                    <div class="role">Bachelor of Arts, Economics</div>
-                    <div class="date">August 2022 - May 2026 (Expected)</div>
-                    <p><strong>Minors:</strong> Statistics and Philosophy, Politics, and Economics</p>
-                    <p><strong>GPA:</strong> 3.9</p>
-                </div>
-                --></section>
-        
-        <!-- SKILLS SECTION -->
-        <section id="skills" class="section">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <!-- Programming Skills -->
-                <div class="skill-category">
-                    <h4>Programming Languages</h4>
-                    <ul class="skill-list">
-                        <li>Python</li>
-                        <li>R</li>
-                        <li>SQL</li>
-                        <li>Stata</li>
-                    </ul>
-                </div>
-                
-                <!-- Data Science Skills -->
-                <div class="skill-category">
-                    <h4>Data Science</h4>
-                    <ul class="skill-list">
-                        <li>Statistical Analysis</li>
-                        <li>Machine Learning</li>
-                        <li>Data Visualization</li>
-                        <li>Data Analysis</li>
-                    </ul>
-                </div>
-            </div>
         </section>
 
 <!-- WRITING SECTION -->
@@ -884,35 +862,35 @@
                 <h4><a href="#" target="_blank">Pathways to Policy</a></h4>
                 <p>An online resource hub empowering young adults to explore public policy and public policy careers.</p>
             </div>
-            
-            <!-- Project 2: Paragon Policy Fellowship Work -->
+                        
+            <!-- Project 2: Diamonds Dashboard -->
             <div class="project-item">
-                <h4><a href="#" target="_blank">Paragon Policy Fellowship Work</a></h4>
-                <p>A talent fellowship training emerging technologists and technology policymakers before deploying them to support state and local governments. </p>
+                <h4><a href="#" target="_blank">Diamonds Dashboard</a></h4>
+                <p>An interactive, R-based dashboard allowing users to input a set of diamond characteristic and receive a price prediction.</p>
             </div>
-            
-            <!-- Project 3: Diamonds Data -->
+
+            <!-- Project 3: Diamond Data -->
             <div class="project-item">
                 <h4><a href="#" target="_blank">Diamonds Data</a></h4>
-                <p>An R Project I did that conducted a variety of visualizations on R's diamond sales dataset.</p>
+                <p>An R-based analysis of R's diamond sales dataset, complete with predictive machine learning models.</p>
             </div>
 
             <!-- Project 4: Presidential Sentiment Analysis -->
             <div class="project-item">
                 <h4><a href="#" target="_blank">Presidential Sentiment Analysis</a></h4>
-                <p>An upcoming R project conducting sentiment analysis on a number of presidential speeches.</p>
+                <p>An R-based R sentiment analysis of various presidential speeches.</p>
             </div>
 
             <!-- Project 5: Economic Data Dashboard -->
             <div class="project-item">
                 <h4><a href="#" target="_blank">Economic Data Dashboard</a></h4>
-                <p>An upcoming R project that builds a Shiny Dashboard to display economic indicators and data.</p>
+                <p>An upcoming Python project that displays various economic indicators and data.</p>
             </div>
 
             <!-- Project 6: Geographic Data -->
             <div class="project-item">
                 <h4><a href="#" target="_blank">Geographic Data</a></h4>
-                <p>An upcoming R project visualizing a variety of US Census Data.</p>
+                <p>An upcoming Python project visualizing a variety of US Census Data.</p>
             </div>
         </section>
 
